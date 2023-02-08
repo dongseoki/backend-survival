@@ -1,11 +1,21 @@
 # Table of contents
 
 ## GitBook
-* [backend-survival 소개 & 데브노트에 대해](README.md)
 
-## Http
-* [(O)HTTP의 이해](/001_HTTP/http_understand.md)
-* [(O)HTTP Client](/001_HTTP/http_client.md)
-* [(O)HTTP SERVER](/001_HTTP/http_server.md)
-* [(O)JAVA HTTP Server](/001_HTTP/java_http_server.md)
-* [(O)Spring Web MVC](/001_HTTP/spring_web_mvc.md)
+- [backend-survival 소개 & 데브노트에 대해](README.md)
+
+## 01 Http
+
+- [(O)HTTP의 이해](/001_HTTP/http_understand.md)
+- [(O)HTTP Client](/001_HTTP/http_client.md)
+- [(O)HTTP SERVER](/001_HTTP/http_server.md)
+- [(O)JAVA HTTP Server](/001_HTTP/java_http_server.md)
+- [(O)Spring Web MVC](/001_HTTP/spring_web_mvc.md)
+
+## 02 REST API
+
+- [(O)01-REST-API](/002_REST_API/01-REST-API.md)
+- [(O)02-URI&MIME-TYPE](/002_REST_API/02-URI&MIME-TYPE.md)
+- [(X)03-Collection-Pattern](/002_REST_API/03-Collection_Pattern.md)
+- [(X)04-Collection-Pattern-적용](/002_REST_API/04-Collection_Pattern_적용.md)
+- [(X)05-Spring-Web-MVC로-구현](/002_REST_API/05-Spring_Web_MVC로_구현.md)
