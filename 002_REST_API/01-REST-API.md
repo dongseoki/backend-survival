@@ -31,7 +31,6 @@
 
   - 1️⃣ **Starting with the Null Style**
     - 제약조건의 빈 집합에서 설계를 시작해야한다!
-      (무슨 소린지 모르겠음.)
   - 2️⃣ **Client-Server**
     - client server구조를 가져야 한다!
   - 3️⃣ **Stateless**
