@@ -16,6 +16,6 @@
 
 - [(O)01-REST-API](/002_REST_API/01-REST-API.md)
 - [(O)02-URI&MIME-TYPE](/002_REST_API/02-URI&MIME-TYPE.md)
-- [(X)03-Collection-Pattern](/002_REST_API/03-Collection_Pattern.md)
-- [(X)04-Collection-Pattern-적용](/002_REST_API/04-Collection_Pattern_적용.md)
-- [(X)05-Spring-Web-MVC로-구현](/002_REST_API/05-Spring_Web_MVC로_구현.md)
+- [(O)03-Collection-Pattern](/002_REST_API/03-Collection_Pattern.md)
+- [(O)04-Collection-Pattern-적용](/002_REST_API/04-Collection_Pattern_적용.md)
+- [(O)05-Spring-Web-MVC로-구현](/002_REST_API/05-Spring_Web_MVC로_구현.md)
