@@ -19,3 +19,10 @@
 - [(O)03-Collection-Pattern](/002_REST_API/03-Collection_Pattern.md)
 - [(O)04-Collection-Pattern-적용](/002_REST_API/04-Collection_Pattern_적용.md)
 - [(O)05-Spring-Web-MVC로-구현](/002_REST_API/05-Spring_Web_MVC로_구현.md)
+
+## 3주차 DTO & JSON & CORS
+
+- [(X)01-DTO](/003_DTO_JSON_CORS/01-DTO.md)
+- [(X)02-직렬화](/003_DTO_JSON_CORS/02-직렬화.md)
+- [(X)03-Jackson-ObjectMapper](/003_DTO_JSON_CORS/03-Jackson_ObjectMapper.md)
+- [(X)04-CORS](/003_DTO_JSON_CORS/04-CORS.md)
