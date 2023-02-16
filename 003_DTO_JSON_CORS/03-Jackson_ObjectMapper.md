@@ -8,13 +8,30 @@
 
 # 내용
 
-## 학습 키워드
-
 - Jackson ObjectMapper 란
   - 전 강의에서 말한 직렬화를 하기 위해서 자바진영에서 정말 많이 사용하는 방법.
   - 결국 라이브러리인데 자바 객체 -> json string 사이의 변환을 돕는다.
 - ObjectMapper
   - 아무튼 그 중에서 ObjectMapper를 이용할 수 있는데, writeAsValue로 하면 jsonString으로 변환하고, read하면 객체로 만들수 있음.
+  - 사용은 의존성을 주입하여 다음과 같이도 쓸수 있다.
+  ```java
+  	@GetMapping("/{id}")
+	public String detail(@PathVariable String id) throws JacksonException {
+		PostDto postDto = new PostDto(id, "제목", "내용");
+		
+		return objectMapper.writeValueAsString(postDto);
+	}
+
+  	@PostMapping
+	@ResponseStatus(HttpStatus.CREATED)
+	public PostDto create(@RequestBody String body) throws JacksonException {
+		PostDto postDto = objectMapper.readValue(body, PostDto.class);
+		
+		return postDto;
+	}
+  ```
+  * 저렇게 쓸수도 있지만, 보통 스프링부트가 자동 변환까지 해준다.
+
 - `@JsonProperty`
   - 이거는 서로 다른 값을 매핑할 때 쓴다.
   - 이거 없으면 보통은 요청 바디의 키값과 키값에 해당하는 getter를 바로 이어준다.

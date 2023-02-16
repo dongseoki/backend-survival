@@ -16,12 +16,43 @@
     - SOP
     - 웹 브라우저의 기본정책으로, 서버의 응답으로 CORS 허용된 출처로부터 받은 적절한 요청이 아니면, 오류 뿜습니다!
   - JSONP
-    - 요건 뭔지 모르겠네요~!
+    - 다른 도메인의 서버로부터 데이터를 요청하기위해 사용하는 방법. Json with padding. sop를 우회하는 방법으로 쓴다.
+    ```javascript
+    <script type="application/javascript"
+        src="http://server.example.com/Users/1234">
+    </script>
+    ```
+    https://ko.wikipedia.org/wiki/JSONP
   - `Access-Control-Allow-Origin`
     - 이게 CORS 허용하는, 서버에서 응답에 붙여줄수 있는 헤더 이름입니다!
+    - 어떠한 origin으로 부터의 요청을 허용하고 있는지 알려주는 헤더이다.
+  ```java
+  @GetMapping
+  public List<PostDto> list(
+    HttpServletResponse response
+  ) {
+    response.addHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+  ```
 - `@CrossOrigin`
   - 매번 저거 요청에 하나 하나 붙이기 귀찮죠?
   - 스프링에서는 이런 어노테이션으로 CORS를 설정할 수 있습니다. 와우
+
+- 스프링에서 webMvcConfigurer를 사용하는 방법
+  - 이렇게 쓰면 전역 적용 가능.
+```java
+@Bean
+	public WebMvcConfigurer webMvcConfigurer() {
+		return new WebMvcConfigurer() {
+		
+		@Override
+		public void addCorsMappings(CorsRegistry registry) {
+			registry.addMapping("/**")
+							.allowedMethods("GET", "POST", "PATCH", "DELETE", "OPTIONS")
+							.allowedOrigins("http://localhost:3000");
+		}
+	};
+}
+```
 
 # 필기
 
