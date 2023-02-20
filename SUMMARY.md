@@ -22,7 +22,7 @@
 
 ## 3주차 DTO & JSON & CORS
 
-- [(X)01-DTO](/003_DTO_JSON_CORS/01-DTO.md)
-- [(X)02-직렬화](/003_DTO_JSON_CORS/02-직렬화.md)
-- [(X)03-Jackson-ObjectMapper](/003_DTO_JSON_CORS/03-Jackson_ObjectMapper.md)
-- [(X)04-CORS](/003_DTO_JSON_CORS/04-CORS.md)
+- [(O)01-DTO](/003_DTO_JSON_CORS/01-DTO.md)
+- [(O)02-직렬화](/003_DTO_JSON_CORS/02-직렬화.md)
+- [(O)03-Jackson-ObjectMapper](/003_DTO_JSON_CORS/03-Jackson_ObjectMapper.md)
+- [(O)04-CORS](/003_DTO_JSON_CORS/04-CORS.md)
