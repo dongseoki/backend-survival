@@ -26,3 +26,9 @@
 - [(O)02-직렬화](/003_DTO_JSON_CORS/02-직렬화.md)
 - [(O)03-Jackson-ObjectMapper](/003_DTO_JSON_CORS/03-Jackson_ObjectMapper.md)
 - [(O)04-CORS](/003_DTO_JSON_CORS/04-CORS.md)
+
+## 4주차 Layered Architecture
+
+- [(X)01-Layered-Architecture](/004_LAYERED_ARCHITECTURE/01-Layered_Architecture.md)
+- [(X)02-Data-Access](/004_LAYERED_ARCHITECTURE/02-Data_Access.md)
+- [(X)03-Domain-Model](/004_LAYERED_ARCHITECTURE/03-Domain_Model.md)
