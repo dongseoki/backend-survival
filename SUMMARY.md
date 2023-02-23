@@ -29,6 +29,6 @@
 
 ## 4주차 Layered Architecture
 
-- [(X)01-Layered-Architecture](/004_LAYERED_ARCHITECTURE/01-Layered_Architecture.md)
-- [(X)02-Data-Access](/004_LAYERED_ARCHITECTURE/02-Data_Access.md)
-- [(X)03-Domain-Model](/004_LAYERED_ARCHITECTURE/03-Domain_Model.md)
+- [(O)01-Layered-Architecture](/004_LAYERED_ARCHITECTURE/01-Layered_Architecture.md)
+- [(O)02-Data-Access](/004_LAYERED_ARCHITECTURE/02-Data_Access.md)
+- [(O)03-Domain-Model](/004_LAYERED_ARCHITECTURE/03-Domain_Model.md)
