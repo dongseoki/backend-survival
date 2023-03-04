@@ -17,17 +17,36 @@
   - 통합하여 테스트 하는 것. 여러 객체에 의존적임. 무거움. 단위 테스트보다 오래걸림.
 - `@Autowired`
   - 의존성을 주입할때 씀. 필드에도 가능하고, 생성자에도 가능함. 생성자에 쓰고, 그것이 하나면 생략이 가능함.
+- spy
+  - 실제 객체의 스파이를 생성하여 실제 객체의 메소드를 호출 할 수 있게 합니다.
+  - 이걸 쓰면, 특정 메서드가 실제로 호출되었는지? 등등을 확인할수도 있습니다.
+    - 스파이가 프록시 역할로 호출하면서, 세주는 것이죠.
 - `@SpyBean`
 
+  - 스프링 컨테이너에서 bean으로 등록된 객체에 대해 spy를 생성해준다.
   - 스파이 역할을 함. 특정한 메서드가 호출되는 횟수를 셀수도 있음.
+
+- MockMvc vs TestRestTemplate
+  기존에 컨트롤러를 테스트하는 데 많이 사용되던 MockMvc와 어떤 차이가 있는지 궁금할 것입니다. 가장 큰 차이점이라면 Servlet Container를 사용하느냐 안 하느냐의 차이입니다. MockMvc는 Servlet Container를 생성하지 않습니다. 반면, @SpringBootTest와 TestRestTemplate은 Servlet Container를 사용합니다. 그래서 마치 실제 서버가 동작하는 것처럼(물론 몇몇 빈은 Mock 객체로 대체될 수는 있습니다) 테스트를 수행할 수 있습니다. 또한, 테스트하는 관점도 서로 다릅니다. MockMvc는 서버 입장에서 구현한 API를 통해 비즈니스 로직이 문제없이 수행되는지 테스트를 할 수 있다면, TestRestTemplate은 클라이언트 입장에서 RestTemplate을 사용하듯이 테스트를 수행할 수 있습니다.
 
 - MockMvc
   - mvc를 목킹한것. 일단 이것을 이용하면, http api를 호출할 수 있다. 그리고 내부적으로 일부 동작을 스텁으로 대체할 수 도 있다.
+  - Main entry point for server-side Spring MVC test support
+- AutoConfigureMockMvc
+
+  - Annotation that can be applied to a test class to enable and configure auto-configuration of MockMvc
+
+- Mock
+  - 메서드가 호출되었을때 그 리턴값을 Stub할수 있다.
 - MockBean
-  - 목 역할을 하도록 스프링 빈에 등록하는 것..?
+  - 스프링 컨테이너에서 목 역할을 하는 빈을 등록하는 것
+  - We can use the @MockBean to add mock objects to the Spring application context.
 - `@WebMvcTest`
+  - Annotation that can be used for a Spring MVC test that focuses only on Spring MVC components.
+  - 스프링 mvc 컴포넌트 에 집중해서 mvc 테스트를 하기 위해 사용함.
   - 웹단만 테스트 하는 방법.
   - 그니까, 서비스나 레포지토리 빈은 안올리고, 웹과 관련된 빈만 올림.
+  - Includes both the @AutoConfigureWebMvc and the @AutoConfigureMockMvc, among other functionality.
 
 # 필기
 
