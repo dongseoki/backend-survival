@@ -13,22 +13,82 @@
 
 ## 학습 키워드
 
+- Factory Pattern
+
+  - D : 다른 오브젝트를 만드는 객체를 사용하는 패턴.
+  - W : 생성에 대한 책임을 위임할수 있고(SRP관점에서), 경우에 따라 싱글톤하게 객체가 유지되도록 할수 있다.
+
 - Spring AOP(Aspect Oriented Programming)
   - 관점 지향 프로그래밍의 준말.
   - 다른 관점에서 코드를 집어넣는 것을 의미한다.
 - Dependency Injection
-  - IoC와 거의 동의어.
   - 의존성을 주입한다.
   - 그리고 이러한 주입은... AOP에 의해서 일어난다!(프레임워크가 AOP 역할로)
+- IoC
+
+  - D : 프로그래머가 작성한 프로그램이 재사용 라이브러리의 흐름 제어를 받게되는 디자인 패턴.
+  - 이유 : 다른 시스템이 어떻게 동작할지에 대해 고민할 필요없이, 미리 정해진 협약대로만 동작하게 하면 된다.
+
 - 싱클턴 패턴
-  - 특정 인스턴스의 개수를 일정하게 유지하는 것임. 그런 것임.
-- IoC(Inversion of Control)
-  - 제어의 역전이 일어났다.
-  - 내 코드를 프레임워크가 관리하더라.
+  - D : 특정 인스턴스의 개수를 일정하게 유지하는 것임. 그런 것임.
+  - W : 메모리 낭비 방지.
 - Spring Bean
   - 스프링이 관리하는 자바 객체를 의미한다.
 - BeanFactory
   - 빈을 만드는 팩토리.
+  - The root interface for accessing a Spring bean container.
+- BeanFactory vs ApplicationContext
+
+  - BF : 스프링 컨테이너 최상위 인터페이스, 스프링 빈을 관리하고 조회. getBean 제공.
+  - AC : BF를 상ㅇ속받음. 수많은 부가기능 제공.(국제화, 환경변수, 이벤트, 리소스 조회 등.)
+    ![](2023-03-04-17-34-09.png)
+
+- BeanDefinitionRegistry
+  - Interface for registries that hold bean definitions, for example RootBeanDefinition and ChildBeanDefinition instances
+- DefaultListableBeanFactory
+  - BeanDefinitionRegistry을 구현하는 구현체.
+- GenericBeanDefinition
+
+  - 표준 빈 정의를 목적으로 한, 원스탑 샵이다.
+
+- BeanFactory 사용 예시.
+
+```java
+// 준비하는 부분 → Given, setUp(BeforeEach)
+
+DefaultListableBeanFactory beanFactory = new DefaultListableBeanFactory();
+
+GenericBeanDefinition beanDefinition = new GenericBeanDefinition();
+
+beanDefinition.setBeanClass("postController", PostController.class);
+
+ConstructorArgumentValues constructorArgs = new ConstructorArgumentValues();
+constructorArgs.addIndexArgument(objectMapper);
+
+MutablePropertyValues propertyValues = new MutablePropertyValues();
+propertyValues.add("objectMapper", objectMapper);
+
+beanFactory.registerBeanDefinition(beanDefinition);
+
+// 사용하는 부분 → When, Then
+
+PostController postController = (PostController) beanFactory.getBean("postController");
+
+PostController postController =
+	beanFactory.getBean("postController", PostController.class);
+
+List<PostDto> postDtos = postController.list();
+
+assertThat(postDtos).hasSize(2);
+```
+
+- AnnotationConfigApplicationContext
+  - ApplicationContext의 구체적 구현체. 아래처럼 쓸수있음.
+
+```java
+ApplicationContext context = new AnnotationConfigApplicationContext(AccountConfig.class);
+AccountService accountService = context.getBean(AccountService.class);
+```
 
 # 필기
 
