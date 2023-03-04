@@ -35,7 +35,7 @@
 
 ## 5주차 DI & Spring Test
 
-- [(세모)01-Dependency-Injection](/005_DI_SPRING_TEST/01-Dependency-Injection.md)
-- [(세모)02-Unit-Test](/005_DI_SPRING_TEST/02-Unit-Test.md)
+- [(O)01-Dependency-Injection](/005_DI_SPRING_TEST/01-Dependency-Injection.md)
+- [(O)02-Unit-Test](/005_DI_SPRING_TEST/02-Unit-Test.md)
 - [(세모)03-Spring-Test](/005_DI_SPRING_TEST/03-Spring-Test.md)
 - [(세모)04-TDD](/005_DI_SPRING_TEST/04-TDD.md)
