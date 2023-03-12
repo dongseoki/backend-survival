@@ -42,9 +42,9 @@
 
 ## 6주차 Database
 
-- [(X)01-Database](/006_DATABASE/01-Database)
-- [(X)02-RelationalModel](/006_DATABASE/02-RelationalModel)
-- [(X)03-RelationalAlgerbra](/006_DATABASE/03-RelationalAlgerbra)
-- [(X)04-Entity-RelationshipModel](/006_DATABASE/04-Entity-RelationshipModel)
-- [(X)05-JDBC](/006_DATABASE/05-JDBC)
-- [(X)06-JdbcTemplate](/006_DATABASE/06-JdbcTemplate)
+- [(O)01-Database](/006_DATABASE/01-Database)
+- [(O)02-RelationalModel](/006_DATABASE/02-RelationalModel)
+- [(O)03-RelationalAlgerbra](/006_DATABASE/03-RelationalAlgerbra)
+- [(O)04-Entity-RelationshipModel](/006_DATABASE/04-Entity-RelationshipModel)
+- [(O)05-JDBC](/006_DATABASE/05-JDBC)
+- [(O)06-JdbcTemplate](/006_DATABASE/06-JdbcTemplate)
