@@ -48,3 +48,11 @@
 - [(O)04-Entity-RelationshipModel](/006_DATABASE/04-Entity-RelationshipModel.md)
 - [(O)05-JDBC](/006_DATABASE/05-JDBC.md)
 - [(O)06-JdbcTemplate](/006_DATABASE/06-JdbcTemplate.md)
+
+## 7주차 JPA
+
+- [(X)01-ORM](/007_JPA/01-ORM.md)
+- [(X)02-Hibernate](/007_JPA/02-Hibernate.md)
+- [(X)03-Embeddable](/007_JPA/03-Embeddable.md)
+- [(X)04-RelationshipMapping](/007_JPA/04-RelationshipMapping.md)
+- [(X)05-SpringDataJPA](/007_JPA/05-SpringDataJPA.md)
