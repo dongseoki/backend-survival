@@ -27,3 +27,27 @@
   - @Embedded : aggregation mapping을 사용하는 측에서 적용.
 
 # 필기
+
+- Aggregate Mapping이다.
+- OOP : primitive Type 대신 Value Object를 적극 활용하는 것을 권장한다.
+  - 책임이 분리된다.
+  - age 타입. 단순히 인트 타입으로 한다면 음수도 들어갈수 있지 않은가??
+- 타입이 들어나게 합시다.
+  - Gender를 만드시죠!!
+    3분 7초 Embeddable 쓰고 있음.
+
+Person toString 추가합시다.
+
+Gender에도 Tostring해요.
+
+얻을 때도 ㅡ
+
+Equals와 해쉬코드 까지 만듭시다.
+9분45초 Age 부분 하는 중.
+
+- value Object의 공통점이 보이나요???
+
+  - 보일거라 믿습니다. good.
+
+- 계속 뭔가 문제도 생기고...
+  나눠서 처리하는 것을 알아봤습니다.

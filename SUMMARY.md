@@ -51,8 +51,8 @@
 
 ## 7주차 JPA
 
-- [(X)01-ORM](/007_JPA/01-ORM.md)
-- [(X)02-Hibernate](/007_JPA/02-Hibernate.md)
-- [(X)03-Embeddable](/007_JPA/03-Embeddable.md)
-- [(X)04-RelationshipMapping](/007_JPA/04-RelationshipMapping.md)
-- [(X)05-SpringDataJPA](/007_JPA/05-SpringDataJPA.md)
+- [(O)01-ORM](/007_JPA/01-ORM.md)
+- [(O)02-Hibernate](/007_JPA/02-Hibernate.md)
+- [(O)03-Embeddable](/007_JPA/03-Embeddable.md)
+- [(O)04-RelationshipMapping](/007_JPA/04-RelationshipMapping.md)
+- [(O)05-SpringDataJPA](/007_JPA/05-SpringDataJPA.md)

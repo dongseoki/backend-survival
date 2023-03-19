@@ -57,3 +57,18 @@ public class Office {
 ```
 
 # 필기
+
+Relationship Mapping
+
+- 제약이 있음..
+- join, lazy fetch
+- 하나를 해야지 하는데 배워야할 게 더 많아짐. 참고해라.
+
+07분 50초
+Item 작성중.
+
+![](2023-03-18-21-43-00.png)
+
+Item중심으로 Fetching을 할수도 있죠.
+
+기본적으로 이렇습니다.
