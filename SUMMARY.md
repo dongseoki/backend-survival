@@ -56,3 +56,11 @@
 - [(O)03-Embeddable](/007_JPA/03-Embeddable.md)
 - [(O)04-RelationshipMapping](/007_JPA/04-RelationshipMapping.md)
 - [(O)05-SpringDataJPA](/007_JPA/05-SpringDataJPA.md)
+
+## 8주차 도메인 주도 설계
+
+- [(X)01-DDD](/008_DDD/01-DDD.md)
+- [(X)02-Strategic_Design](/008_DDD/02-Strategic_Design.md)
+- [(X)03-EntityValueObject](/008_DDD/03-EntityValueObject.md)
+- [(X)04-Aggregate](/008_DDD/04-Aggregate.md)
+- [(X)05-Repository](/008_DDD/05-Repository.md)
