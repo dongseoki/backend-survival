@@ -64,3 +64,8 @@
 - [(O)03-EntityValueObject](/008_DDD/03-EntityValueObject.md)
 - [(O)04-Aggregate](/008_DDD/04-Aggregate.md)
 - [(O)05-Repository](/008_DDD/05-Repository.md)
+
+## 9주차 Hexagonal Architecture
+
+- [(O)01-SOLID](/009_Hexa_arch/01-SOLID.md)
+- [(O)02-Hexagonal_Architecture](/009_Hexa_arch/02-Hexagonal_Architecture.md)
