@@ -40,7 +40,7 @@ public class ProductService
 
 원칙, 패턴, 실천 방안들.
 
-SRP
+## SRP
 
 이거는 SRP 위반이다!
 
@@ -56,3 +56,37 @@ SRP
 MECE????
 
 8 분 40초까지 완료함. GOOD.
+
+## OCP
+
+- 자바에서는 인터페이스로 정의하더라..!!
+
+## 리스코프 치환 원칙.
+
+- 상속을 받으면 서브 타입이 되지만,
+- 진정한 서브 타입은 그 베이스타입 쓰던 자리에 치환이 가능해야한다.
+- 상황마다, ...
+- ex) 직사각형 클래스를 상속받은 정사각형 클래스. 이상해지더라..!
+
+## ISP
+
+- 코드로 와서, ProductRepository
+  List<Product> findAllByName(String name);
+  ...
+
+* save
+* select는 어떠한가?? 클래스를 나누는 것은 어떠할까?
+  - interface SearchProductRepository
+  - interface CommandProductRepository
+
+- etc 함수형 인터페이스를 쓸수도 있겠죠.
+  - 함수형 인터페이스는 람다식으로 표현이 가능하죠~!
+
+## DIP
+
+- 기술적인것. DB에 의존하지 않아..
+- 이미 쓰고 있던것.
+- DI. 도메인 객체중에 레포지토리가 있는 것이다.
+- DIP는 DI를 쓰면 편합니다.
+
+- 우리가 하고 있는 것이 이런거구나 짚어볼 수있는 시간이 되었음.
