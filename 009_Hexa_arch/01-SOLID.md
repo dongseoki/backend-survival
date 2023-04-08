@@ -18,7 +18,7 @@ SOLID : 개발시 지켜야할 5가지 객체지향 설계 원칙
 ## SRP (Single Responsibility Principle, 단일 책임 원칙)
 
 - 단일 책임을 갖도록 설계하자!
-  - ex) CartRepository를 추출/분리함
+  - ex: CartRepository를 추출/분리함
     - SQL변경되어도, dbms 바꿔도, 그 위 상위 서비스는 수정 안해도됨.
 
 ## OCP (Open-Closed Principle, 개방-폐쇄 원칙)
@@ -76,9 +76,8 @@ public class ProductService
 - 테스트 하기도 쉬워지더라..!!!
 - 재사용 편해져..!!!
 
-MECE????
-
-8 분 40초까지 완료함. GOOD.
+- MECE
+  - MECE(Mutually Exclusive Collectively Exhaustive의 약자, 상호배제와 전체포괄)는 항목들이 상호 배타적이면서 모였을 때는 완전히 전체를 이루는 것을 의미한다
 
 ## OCP
 
@@ -89,7 +88,7 @@ MECE????
 - 상속을 받으면 서브 타입이 되지만,
 - 진정한 서브 타입은 그 베이스타입 쓰던 자리에 치환이 가능해야한다.
 - 상황마다, ...
-- ex) 직사각형 클래스를 상속받은 정사각형 클래스. 이상해지더라..!
+- ex: 직사각형 클래스를 상속받은 정사각형 클래스. 이상해지더라..!
 
 ## ISP
 
