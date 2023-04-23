@@ -21,6 +21,11 @@
     - 비교적 최근에 나옴.
     - 최근에 나온거 쓰자.
     - Since JDK 1.8
+  - Date를 쓰면 안되는 이유
+    - 국제화와 잘 맞지 않음.
+    - 월 계산의 문제.(zero base index 문제)
+    - mutable하다.
+      - 이 객체를 공유하여 사용할 경우, 값이 일치하지 않게되어, 값에 영향을 줄 수 있음.
 - Epoch Time
   - 1970년 1월 1일 부터 1초단위로 측정한 값.
 - Spring Security PasswordEncoder
