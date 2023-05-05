@@ -84,3 +84,8 @@
 - [(O)01-Multipart_FormData](/011_FILE_UPLOAD/01-Multipart_FormData.md)
 - [(O)02-Separation_of_concerns](/011_FILE_UPLOAD/02-Separation_of_concerns.md)
 - [(O)03-Cloudinary](/011_FILE_UPLOAD/03-Cloudinary.md)
+
+## 12주차 CQRS
+
+- [(O)01-CQRS](/012_CQRS/01-CQRS.md)
+- [(O)02-Redis](/012_CQRS/02-Redis.md)
