@@ -89,3 +89,10 @@
 
 - [(O)01-CQRS](/012_CQRS/01-CQRS.md)
 - [(O)02-Redis](/012_CQRS/02-Redis.md)
+
+## 13주차 온라인 쇼핑몰 01
+
+- [(X)01-개발 준비](/013_ONLINE_SHOP_01/01-DEV_PREPARE.md)
+- [(X)01-카테고리 목록 확인](/013_ONLINE_SHOP_01/02-CHECK_CATEGORY_LIST.md)
+- [(X)01-상품 목록](/013_ONLINE_SHOP_01/03-PRODUCT_LIST.md)
+- [(X)01-상품 상세](/013_ONLINE_SHOP_01/04-PRODUCT_DETAIL.md)
