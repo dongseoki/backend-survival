@@ -96,3 +96,10 @@
 - [(O)02-카테고리 목록 확인](/013_ONLINE_SHOP_01/02-CHECK_CATEGORY_LIST.md)
 - [(O)03-상품 목록](/013_ONLINE_SHOP_01/03-PRODUCT_LIST.md)
 - [(O)04-상품 상세](/013_ONLINE_SHOP_01/04-PRODUCT_DETAIL.md)
+
+## 14주차 온라인 쇼핑몰 02
+
+- [(O)Spring Security 설정](/014_ONLINE_SHOP_02/01-SPRING_SECURITY.md)
+- [(O)로그인, 로그아웃](/014_ONLINE_SHOP_02/02-LOGIN_LOGOUT.md)
+- [(O)회원 정보 확인](/014_ONLINE_SHOP_02/03-CHECK_MEMBER_INFO.md)
+- [(O)회원 가입](/014_ONLINE_SHOP_02/04-SIGN_UP.md)
